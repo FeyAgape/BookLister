@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">Book Lister</string>
+
+    <string name="intro">Get a list of published books on a given topic or search for a published book.</string>
+
+    <string name="hint">Enter Name</string>
+    <string name="button">Search</string>
+
+    <string name="title">Title</string>
+    <string name="subtitle">Subtitle</string>
+    <string name="author">First and Last Name</string>
+    <string name="author1">By:</string>
+    <string name="description">Description of the book, must not span more that 2 lines</string>
+
+    <string name="toast1">Please enter a search name.</string>
+    <string name="connection">No internet connection.</string>
+    <string name="no_books">No books found. Enter a different search name and retry.</string>
+    <string name="book_cover">Book Cover</string>
+
 </resources>
