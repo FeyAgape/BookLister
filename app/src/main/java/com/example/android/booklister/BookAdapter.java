@@ -20,11 +20,31 @@ import java.util.List;
  * Created by FEY-AGAPE on 14/07/2017.
  */
 
+/**
+ * An {@link BookAdapter} knows how to create a list item layout for each book
+ * in the data source (a list of {@link Book} objects).
+ * <p>
+ * These list item layouts will be provided to an adapter view like ListView
+ * to be displayed to the user.
+ */
+
 public class BookAdapter extends ArrayAdapter<Book> {
+
+    /**
+     * Constructs a new {@link BookAdapter}.
+     *
+     * @param context of the app
+     * @param books   is the list of earthquakes, which is the data source of the adapter
+     */
 
     BookAdapter(Context context, List<Book> books) {
         super(context, 0, books);
     }
+
+    /**
+     * Returns a list item view that displays information about the book
+     * in the list of books.
+     */
 
     @NonNull
     @Override
@@ -57,7 +77,6 @@ public class BookAdapter extends ArrayAdapter<Book> {
 
         return listItemView;
     }
-
 
     private class DownloadImageTask extends AsyncTask<String, Void, Bitmap> {
         final ImageView bmImage;
