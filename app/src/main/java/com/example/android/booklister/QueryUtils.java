@@ -150,9 +150,9 @@ public final class QueryUtils {
                 } catch (JSONException e) {
                 }
 
-                JSONArray authorsArray = properties.getJSONArray("authors");
-                for (int b = 0; b < authorsArray.length(); b++) {
-                    authors += authorsArray.getString(b);
+                try {
+                    authors = properties.getString("authors");
+                } catch (JSONException e) {
                 }
 
                 try {
