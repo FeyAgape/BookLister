@@ -8,7 +8,7 @@ This project is about combining various ideas and skills we’ve been practicing
 
 Fetching data from an API
 
-Using an 
+Using an AsyncTask
 
 Parsing a JSON response
 
